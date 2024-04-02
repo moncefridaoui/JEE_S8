@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Pres2 {
     public static void main(String[] args) throws Exception{
-        Scanner sc=new Scanner(new File("C:\\Users\\Lenovo\\Downloads\\JEE-main\\inversion_controle\\config.txt"));
+        Scanner sc=new Scanner(new File("C:\\Users\\Lenovo\\Desktop\\TP1_JEE\\inversion_controle\\config.txt"));
         String daoCLassName=sc.nextLine();
         Class cDao=Class.forName(daoCLassName);
         IDao dao=(IDao) cDao.newInstance();
